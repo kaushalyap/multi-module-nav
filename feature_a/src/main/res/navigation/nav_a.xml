@@ -19,10 +19,7 @@
         app:destination="@id/nav_b" />
 
 
-    <include-dynamic
-        android:id="@+id/nav_b"
-        app:graphPackage="com.example.feature_b"
-        app:graphResName="nav_b"
-        app:moduleName="feature_b" />
+    <include app:graph="@navigation/nav_b" />
+
 
 </navigation>

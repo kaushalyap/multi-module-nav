@@ -1,0 +1,5 @@
+include ':common'
+include ':feature_b'
+include ':feature_a'
+include ':app'
+rootProject.name = "multi-module-nav"

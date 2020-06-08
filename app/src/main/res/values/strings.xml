@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string name="app_name">Multi Module Nav</string>
     <string name="go_to_a">Go to A</string>
 </resources>

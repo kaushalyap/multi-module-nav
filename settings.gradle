@@ -1,4 +1,3 @@
-include ':common'
 include ':feature_b'
 include ':feature_a'
 include ':app'

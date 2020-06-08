@@ -8,6 +8,7 @@
 
     <fragment
         android:id="@+id/BFragment"
+        app:moduleName="feature_b"
         android:name="com.example.feature_b.BFragment"
         android:label="B"
         tools:layout="@layout/fragment_b" />

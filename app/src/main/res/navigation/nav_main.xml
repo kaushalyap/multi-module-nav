@@ -7,6 +7,7 @@
 
     <fragment
         android:id="@+id/mainFragment"
+        app:moduleName="app"
         android:name="com.example.multi_module_nav.MainFragment"
         android:label="Main"
         tools:layout="@layout/fragment_main" />
@@ -15,6 +16,10 @@
         android:id="@+id/action_global_a"
         app:destination="@id/nav_a" />
 
-    <include app:graph="@navigation/nav_a" />
+    <include-dynamic
+        android:id="@+id/nav_a"
+        app:graphPackage="com.example.feature_a"
+        app:graphResName="nav_a"
+        app:moduleName="feature_a" />
 
 </navigation>

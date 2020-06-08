@@ -3,10 +3,12 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_a"
-    app:startDestination="@id/AFragment">
+    app:startDestination="@id/AFragment"
+    tools:ignore="UnusedNavigation">
 
     <fragment
         android:id="@+id/AFragment"
+        app:moduleName="feature_a"
         android:name="com.example.feature_a.AFragment"
         android:label="A"
         tools:layout="@layout/fragment_a" />
@@ -16,5 +18,11 @@
         android:id="@+id/action_global_b"
         app:destination="@id/nav_b" />
 
-    <include app:graph="@navigation/nav_b" />
+
+    <include-dynamic
+        android:id="@+id/nav_b"
+        app:graphPackage="com.example.feature_b"
+        app:graphResName="nav_b"
+        app:moduleName="feature_b" />
+
 </navigation>
